@@ -6,6 +6,17 @@
     <title>楽曲リクエスト</title>
   </head>
   <body>
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="song">Song:</label>
+          <input type="text" id="song" name="input_song">
+        </li>
+        <li class="button">
+          <button type="submit">送信</button>
+        </li>
+      </ul>
+    </form>
     <h1>Juke Box</h1>
     <p>聴きたい曲を下のフォームに入力して送信すると、当日流れる可能性があります。</p>
     <p>特定の曲でも、ジャンルやアーティスト、コンテンツでも良いです。</p>
