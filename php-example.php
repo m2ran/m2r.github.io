@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
   //入力値に不正なデータがないかなどをチェックする関数
   function checkInput($var){
@@ -51,5 +49,3 @@
   
 
 ?>
-
-</html>
