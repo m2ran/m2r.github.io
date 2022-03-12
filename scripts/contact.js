@@ -14,6 +14,7 @@ window.contact.send = function(){
     var name = $('input[id="name"]').val() 
     var email = $('input[id="email"]').val() 
     var message = $('textarea[id="message"]').val()
+    alert(name);
     data = {
         name: name,
         email: email,
@@ -29,7 +30,6 @@ window.contact.ajax = function(data){
         type:'POST',
         data: data
     }).done(function(res){
-        alert(name);
         alert(data);
         if(res.response != "success") {
             console.log(JSON.stringify(res.error));
