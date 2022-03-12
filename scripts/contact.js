@@ -16,8 +16,6 @@ window.contact.send = function(){
     var message = $('textarea[id="message"]').val()
     data = {
         name: name,
-        email: email,
-        message: message,
     }
     window.contact.ajax(data);
 }
