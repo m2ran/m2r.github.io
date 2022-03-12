@@ -2,7 +2,7 @@ window.contact = window.contact || {};
 
 window.contact.checkValidation = function(){
     if(!$('input[id="name"]').val()){
-        $('input[id="submit"]').attr('disabled', 'disabled');
+        $('input[id=submit]').attr('disabled', 'disabled');
         return false;
     }
 
@@ -27,7 +27,7 @@ window.contact.ajax = function(data){
     }).done(function(res){
         if(res.response != "success") {
             console.log(JSON.stringify(res.error));
-            alert('送信失敗1'); 
+            alert('送信失敗11'); 
             return1
         }
         alert('送信完了');
