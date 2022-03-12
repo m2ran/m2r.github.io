@@ -83,10 +83,8 @@
 <body>
     <h1>Juke Box</h1>
     <p>聴きたい曲を下のフォームに入力して送信すると、当日流れる可能性があります。</p>
-    <p>特定の曲でも、ジャンルやアーティスト、コンテンツでも良いです。</p>
-    <form class="contact__form"
-    action="https://docs.google.com/forms/d/e/1FAIpQLSfOQPYfYpHsjTdMgQ6qv4BiVPeIHwYOrRjymNn2mT605Q-HUg/formResponse"
-    target="dummyIframe" method="POST" id="contactForm">
+    <p>特定の曲でも、ジャンルやアーティスト、コンテンツでも良いです。2</p>
+    <form target="dummyIframe" method="POST">
         <u1>
             <li class="contact__name">
                 <label for="name">Song:</label>
@@ -97,10 +95,9 @@
             </li>
         </ul>
         <iframe name="dummyIframe" style="display:none;" id="dummyIframe"></iframe>
-        <div class="contact__submitted" id="submittedMsg" style="display: none;">
+        <li class="contact__submitted" id="submittedMsg" style="display: none;">
             <p>正常に送信されました</p>
-            <div class="button-sm" id="resubmitBtn">フォームを再表示</div>
-        </div>
+        </li>
     </form>
     <script type="text/javascript" src="https://github.com/m2ran/m2ran.github.io/scripts/contact.js"></script>
 </body>
