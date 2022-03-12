@@ -23,7 +23,7 @@ window.contact.ajax = function(data){
     $.ajax({
         url: url,
         type:'POST',
-        data: data
+        data: name
     }).done(function(res){
         if(res.response != "success") {
             console.log(JSON.stringify(res.error));
