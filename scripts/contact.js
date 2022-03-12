@@ -12,8 +12,12 @@ window.contact.checkValidation = function(){
 
 window.contact.send = function(){
     var name = $('input[id="name"]').val() 
+    var email = $('input[id="email"]').val() 
+    var message = $('textarea[id="message"]').val()
     data = {
         name: name,
+        email: email,
+        message: message,
     }
     window.contact.ajax(data);
 }
