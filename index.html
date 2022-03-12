@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+    <title>Contact</title>
+  
+  
     <link href="styles/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>楽曲リクエスト</title>
@@ -72,8 +79,9 @@
       margin-left: .5em;
     }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Juke Box</h1>
     <p>聴きたい曲を下のフォームに入力して送信すると、当日流れる可能性があります。</p>
     <p>特定の曲でも、ジャンルやアーティスト、コンテンツでも良いです。</p>
@@ -85,17 +93,22 @@
       <li>・Color Bass</li>
       <li>・夜に駆けそうな曲</li>
     </ul>
-
-    <form action="php-test.php" method="POST">
+    <form action="/my-handling-form-page" method="POST">
       <ul>
         <li>
           <label for="song">Song:</label>
-          <input type="text" id="song" name="input_song">
+          <input type="text" id="song" onkeyup='window.contact.checkValidation()' placeholder="song">
         </li>
         <li class="button">
-          <button type="submit">送信</button>
+          <button type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">送信</button>
         </li>
       </ul>
     </form>
-  </body>
-</html> 
+</body>
+
+<script>
+    $(function() {
+        window.contact.checkValidation()
+    });
+</script>
+</html>
