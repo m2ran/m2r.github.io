@@ -27,12 +27,12 @@ window.contact.ajax = function(data){
     }).done(function(res){
         if(res.response != "success") {
             console.log(JSON.stringify(res.error));
-            alert('送信失敗'); 
-            return;
+            alert('送信失敗1'); 
+            return1
         }
         alert('送信完了');
     }).fail(function(){
-        alert('送信失敗'); 
+        alert('送信失敗2'); 
     }).always(function(){
         location.href="./index.html";
     })
