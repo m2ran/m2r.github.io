@@ -30,7 +30,7 @@ window.contact.ajax = function(data){
         alert(data)
         if(res.response != "success") {
             console.log(JSON.stringify(res.error));
-            alert('送信失敗11'); 
+            alert('送信失敗111'); 
             return1
         }
         alert('送信完了');
