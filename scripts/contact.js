@@ -2,7 +2,7 @@ window.contact = window.contact || {};
 
 window.contact.checkValidation = function(){
     if(!$('input[id="name"]').val()){
-        $('input[id=submit]').attr('disabled', 'disabled');
+        $('input[id="submit"]').attr('disabled', 'disabled');
         return false;
     }
 
