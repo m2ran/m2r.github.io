@@ -3,7 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/contact.js"></script>
   
     <link href="styles/style.css" rel="stylesheet">
     <title>楽曲リクエスト</title>
@@ -22,12 +24,12 @@
     <p>特定の曲でも、ジャンルやアーティスト、コンテンツでも良いです。</p>
     <u1>
         <input name="name" id="name" type="text" onkeyup='window.contact.checkValidation()' placeholder="ここに入力" >
+        <input name="email" id="email" type="email" onkeyup='window.contact.checkValidation()' placeholder="e-mail" >
+        <textarea name="message" id="message"  onkeyup='window.contact.checkValidation()' placeholder="message"></textarea>
         <input type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="送信">
     </u1>
 </body>
     
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="scripts/contact.js"></script>
 
 <script>
     $(function() {
