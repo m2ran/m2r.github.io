@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="scripts/contact.js"></script>
-    <title>Contact</title>
   
   
     <link href="styles/style.css" rel="stylesheet">
@@ -47,7 +46,7 @@
       font: 1em sans-serif;
 
       /* テキストフィールドの大きさを統一 */
-      width: 400px;
+      width: 300px;
       box-sizing: border-box;
 
       /* フォームフィールド境界に合わせる */
@@ -88,8 +87,8 @@
     <form>
       <ul>
         <li>
-          <label for="ここに入力">Song:</label>
-          <input type="text" id="name" onkeyup='window.contact.checkValidation()' placeholder="name">
+          <label for="song">Song:</label>
+          <input type="text" id="name" onkeyup='window.contact.checkValidation()' placeholder="ここに入力">
         </li>
         <li class="button">
           <button type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">送信</button>
