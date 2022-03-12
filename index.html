@@ -83,22 +83,9 @@
 <body>
     <h1>Juke Box</h1>
     <p>聴きたい曲を下のフォームに入力して送信すると、当日流れる可能性があります。</p>
-    <p>特定の曲でも、ジャンルやアーティスト、コンテンツでも良いです。3</p>
-    <form target="dummyIframe" method="POST">
-        <u1>
-            <li class="contact__name">
-                <label for="name">Song:</label>
-                <input type="text" id="name" onkeyup='window.contact.checkValidation()' placeholder="ここに入力">
-            </li>
-            <li class="button">
-                <button type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">送信</button>
-            </li>
-        </ul>
-        <iframe name="dummyIframe" style="display:none;" id="dummyIframe"></iframe>
-        <li class="contact__submitted" id="submittedMsg" style="display: none;">
-            <p>正常に送信されました</p>
-        </li>
-    </form>
+    <p>特定の曲でも、ジャンルやアーティスト、コンテンツでも良いです。4</p>
+    <li><input name="name" id="name" type="text" onkeyup='window.contact.checkValidation()' placeholder="ここに入力" ><\li>
+    <input type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">
 </body>
 
 <script>
