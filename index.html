@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://github.com/m2ran/m2ran.github.io/blob/main/scripts/contact.js"></script>
+    <script src="https://github.com/m2ran/m2ran.github.io/scripts/contact.js"></script>
   
   
     <link href="styles/style.css" rel="stylesheet">
@@ -89,8 +89,8 @@
     target="dummyIframe" method="POST" id="contactForm">
         <u1>
             <li class="contact__name">
-                <label for="songTitle">Song:</label>
-                <input type="text" id="songTitle" onkeyup='window.contact.checkValidation()' placeholder="ここに入力" required />
+                <label for="name">Song:</label>
+                <input type="text" id="name" onkeyup='window.contact.checkValidation()' placeholder="ここに入力" required />
             </li>
             <li class="button">
                 <button type="submit" id="submit" name="send" onclick='window.contact.send(this)' value="Send">送信</button>
