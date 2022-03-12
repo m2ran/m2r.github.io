@@ -27,6 +27,7 @@ window.contact.ajax = function(data){
         type:'POST',
         data: data
     }).done(function(res){
+        alert(res.message)
         if(res.response != "success") {
             console.log(JSON.stringify(res.error));
             alert('送信失敗11'); 
